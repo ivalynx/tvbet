@@ -1,0 +1,15 @@
+.main-title {
+  min-height: 125px;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include for-size(tablet) {
+    max-width: 780px;
+  }
+}
+.main-title__accent {
+  color: $blue;
+  font-family: 'Raleway';
+  font-weight: 800;
+  line-height: $lineHeight-less;
+}

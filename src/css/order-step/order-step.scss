@@ -1,0 +1,12 @@
+.order-step__title {
+  @include for-size(phone) {
+    width: calc(100vw - 30px);
+  }
+  @include for-size(tablet) {
+    width: 100px;
+    word-break: break-all;
+  }
+  @include for-size(desktop) {
+    width: 188px;
+  }
+}

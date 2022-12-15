@@ -1,0 +1,76 @@
+.custom-select-container {
+  @extend .order-form__item;
+  @extend .form__item;
+  color: $placeholder;  
+  position: relative;
+  select {
+    @extend .visually-hidden;
+}
+}
+.custom-select-opener {
+  background-color: transparent;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  &::after {
+    content: '';
+    width: 9px;
+    height: 6px;
+    background-image: url(../img/arrow.svg);
+    background-position: 50%;
+    transition: transform 0.15s;
+  }
+}
+.custom-select-panel {
+  @extend .custom-scroll;
+  width: calc(100% + 2px);
+  max-height: 0;
+  transition: max-height 0.15s ease-out, overflow-y 0.1s 0.15s;
+  overflow: hidden;
+  background-color: $placeholder;
+  position: absolute;
+  top: calc(100% - 1px);
+  left: -1px;
+  z-index: 1;
+  border-radius: 3px;
+}
+.custom-select-option {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  color: $white;
+  cursor: pointer;
+  &:first-child {
+    display: none;
+  }
+}
+.custom-select-option.has-focus {
+  background-color: transparent; //
+  color: $blue;
+}
+.custom-select-option.is-selected::before { //
+  content: '';
+  padding: 0;
+}
+
+
+.is-open {
+  background-color: $placeholder;
+  border-color: #3D4050;
+  .custom-select-opener {
+    color: $white;
+    &::after {
+      background-image: url(../img/arrow_white.svg);
+      transform: rotate(-180deg);
+    }
+  }
+  .custom-select-panel {
+    max-height: 10.7em; //
+    overflow-y: auto;
+    border: 1px solid $blackBgFooter;
+    border-top: none;
+  }
+}

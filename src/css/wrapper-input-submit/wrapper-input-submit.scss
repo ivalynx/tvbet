@@ -1,0 +1,25 @@
+.wrapper-input-submit__input {
+  margin-top: 26px;
+  padding: 15px 10px;
+  display: block;
+  background: $blue;
+  border: 1px solid $white;
+  border-radius: 4px;
+  // font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  @include for-size(devices) {
+    width: 100%;
+    height: 52px;
+  }
+  @include for-size(desktop) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 370px;
+  }
+  &:hover {
+    border-color: $blueDark;
+  }
+}

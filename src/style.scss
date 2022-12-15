@@ -1,0 +1,62 @@
+@import '../node_modules/font-face-generator/mixin';
+
+@include font-face((
+  'Lato' : (
+    [normal] : 'Lato-Regular',
+    [bold] : 'Lato-Bold',
+    [black] : 'Lato-Black',
+  ),
+
+));
+
+// @font-face {
+//   font-family: "Lato";
+//   src: local("☺"), 
+//     url("./fonts/Lato/Lato-Regular.ttf") format("ttf"),
+//     url("./fonts/Lato/Lato-Regular.woff") format("woff"),
+//     url("./fonts/Lato/Lato-Regular.woff2") format("woff2");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "Lato";
+//   src: local("☺"), url("./fonts/Lato/Lato-Bold.ttf") format("ttf"),
+//   url("./fonts/Lato/Lato-Bold.woff") format("woff"),
+//   url("./fonts/Lato/Lato-Bold.woff2") format("woff2");
+//   font-weight: 600;
+// }
+// @font-face {
+//   font-family: "Lato";
+//   src: local("☺"), url("./fonts/Lato/Lato-Black.ttf") format("ttf"),
+//   url("./fonts/Lato/Lato-Black.woff") format("woff"),
+//   url("./fonts/Lato/Lato-Black.woff2") format("woff2");
+//   font-weight: 800;
+// }
+// @font-face {
+//   font-family: "Raleway";
+//   src: local("☺"), 
+//     url("./fonts/Raleway/Raleway-Regular.ttf") format("ttf"),
+//     url("./fonts/Raleway/Raleway-Regular.woff") format("woff"),
+//     url("./fonts/Raleway/Raleway-Regular.woff2") format("woff2");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "Raleway";
+//   src: local("☺"), url("./fonts/Raleway/Raleway-Bold.ttf") format("ttf"),
+//   url("./fonts/Raleway/Raleway-Bold.woff") format("woff"),
+//   url("./fonts/Raleway/Raleway-Bold.woff2") format("woff2");
+//   font-weight: 600;
+// }
+// @font-face {
+//   font-family: "Raleway";
+//   src: local("☺"), url("./fonts/Raleway/Lato-Black.ttf") format("ttf"),
+//   url("./fonts/Raleway/Raleway-Black.woff") format("woff"),
+//   url("./fonts/Raleway/Raleway-Black.woff2") format("woff2");
+//   font-weight: 800;
+// }
+
+body {
+  font-family: 'Lato';
+  font-weight: normal;
+}

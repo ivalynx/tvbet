@@ -1,0 +1,25 @@
+@import './variables';
+
+@mixin for-size($range) {
+  @if $range == small-phone {
+    @media (max-width: $phone) { @content; }
+  } @else if $range == phone {
+    @media (max-width: #{$phone-upper-boundary - 1}) { @content; }
+  } @else if $range == tablet {
+    @media (min-width: $phone-upper-boundary) { @content; }
+  } @else if $range == devices {
+    @media (max-width: #{$tablet-landscape-upper-boundary - 1}) { @content; }
+  } @else if $range == desktop {
+    @media (min-width: $tablet-landscape-upper-boundary) { @content; }
+  } 
+}
+
+// использование
+.my-box {  
+  @include for-size(desktop) {
+  }
+}
+
+@import './reset';
+@import './template';
+@import './pageComponents';

@@ -1,0 +1,16 @@
+.form__item {
+  padding: 12px 10px;
+  background-color: $whiteOpacity85;
+  border: 1px solid $white;
+  border-radius: 3px;
+  font-size: 18px;
+  &:focus {
+    outline: $blue solid 3px;
+  }
+  &::placeholder {
+    color: $placeholder;
+  }
+  &:focus::placeholder {
+    color: transparent;
+  }
+}

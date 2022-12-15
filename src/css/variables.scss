@@ -1,0 +1,31 @@
+$white: #ffffff;
+$whiteOpacity85: rgba(255, 255, 255, 0.85); // a white:hover, input border
+$whiteOpacity70: rgba(255, 255, 255, 0.7);  // a white:active, slider bg
+$whiteOpacity60: rgba(255, 255, 255, 0.6);  // a white:focus
+$blue: #3E9CDC;
+$blueOpacity85: rgba(62, 156, 220, 0.85);   // a blue:hover
+$blueOpacity70: rgba(62, 156, 220, 0.7);   // a blue:focus
+$blueOpacity60: rgba(62, 156, 220, 0.6);    // a blue:active
+$blueDark: #286690;
+$black: #000000;
+$blackLight: #2A2B30;
+$blackOpacity85: rgba(0, 0, 0, 0.85);
+$blackOpacity70: rgba(0, 0, 0, 0.7);
+$blackOpacity60: rgba(0, 0, 0, 0.6);
+$blackBg: rgba(16, 16, 29, 0.9);
+$blackBgFooter: #3D4050;
+$placeholder: #272733;
+$grayText: #BBBBBB;
+$grayFooter: #C3C3C3;
+$buttonBorder: #6F6D7B;
+
+$lineHeight-standart: 120%;
+$lineHeight-less: 117.4%;
+
+$phone: 480px;
+$phone-upper-boundary: 768px;
+$tablet-landscape-upper-boundary: 1170px + 17px; // scroll width
+
+:export {
+  $phone-upper-boundary: 768px;
+}

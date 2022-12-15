@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LoremIpsum.Net</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800&family=Raleway:wght@400;700;800&display=swap" rel="stylesheet">
+  <script src="custom-select.min.js" type="text/javascript"></script>
+</head>
+<body>
+  <header class="part part_header">
+    <div class="part__content header">
+      <a href="/" class="logotype">LoremIpsum.<span class="logotype__accent">Net</span></a>
+      <button class="burger-button" role="button" aria-role="button">
+        <span class="burger-button__item">—</span>
+        <span class="burger-button__item">—</span>
+        <span class="burger-button__item">—</span>
+      </button>
+      <nav class="burger-menu">
+        <a href="/" class="burger-menu__item burger-menu__item_current">Бизнес</a>
+        <a href="/" class="burger-menu__item">О нас</a>
+        <a href="/" class="burger-menu__item">Цены</a>
+        <a href="/" class="burger-menu__item">Оформить заказ</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <article class="part part_product">
+      <section class="part__content">
+        <div class="product-descript">
+          <h1 class="product-descript__item product-descript__item_title main-title">
+            <span class="main-title__accent">Lorem ipsum</span> dolor sit ametconsectetur <span class="main-title__accent">adipiscing</span>
+          </h1>
+          <h2 class="product-descript__item product-descript__item_subtitle title">At vero eos et accusamus et iusto odio dignissimos ducimus!</h2>
+          <ul class="product-descript__item product-descript__item_list list">
+            <li class="list__item">Totam rem aperiam eaque ipsa</li>
+            <li class="list__item">Sit voluptatem accusantium doloremque laudantium</li>
+            <li class="list__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+          </ul>
+        </div>          
+        <div class="product-buttons">
+          <a href="#" class="product-buttons__item product-buttons__item_accent">заказать</a>
+          <a href="#" class="product-buttons__item">подробнее</a>
+        </div>
+      </section>
+    </article>
+    <article class="part part_order">
+      <section class="part__content order">
+        <div class="order__item order-header">
+          <h2 class="order-header__item order-title">Оформление  <span class="order-title__accent">Заказа</span></h2>
+          <p class="order-header__item order-descript">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+        </div>
+        <div class="order__item order-steps">
+          <div class="order-steps__item order-steps__item_step order-steps__item_icon_find order-steps__item_icon order-step">
+            <span class="order-step__title">Lorem ipsum dolorsit amet</span>
+          </div>
+          <div class="order-steps__item order-steps__item_separator"></div>
+          <div class="order-steps__item order-steps__item_step order-steps__item_icon_percent order-steps__item_icon order-step">
+            <span class="order-step__title">Сonsecteturadipiscing elit</span>
+          </div>
+          <div class="order-steps__item order-steps__item_separator"></div>
+          <div class="order-steps__item order-steps__item_step order-steps__item_icon_substract order-steps__item_icon order-step">
+            <span class="order-step__title">Sed do eiusmod tempor</span>
+          </div>
+          <div class="order-steps__item order-steps__item_separator"></div>
+          <div class="order-steps__item  order-steps__item_step order-steps__item_icon_envelope order-steps__item_icon order-step">
+            <span class="order-step__title">Esse cillum doloreeu fugiat</span>
+          </div>
+          <div class="order-steps__item order-steps__item_separator"></div>
+          <div class="order-steps__item order-steps__item_step order-steps__item_icon_banknote order-steps__item_icon order-step">
+            <span class="order-step__title">Excepteur sint occaecat cupidatat non proident</span>
+          </div>
+        </div>
+        <form class="order__item order-form form" name="orderForm">
+          <select name="systemType" id="systemType" class="order-form__item select form__item">
+            <option value="0" class="select__option" disabled>Выберите тип системы</option>
+            <option value="1" class="select__option">Sed ut perspiciatis</option>
+            <option value="2" class="select__option">Nemo enim ipsam</option>
+            <option value="3" class="select__option">Et harum quidem</option>
+            <option value="4" class="select__option">Temporibus autem</option>
+            <option value="5" class="select__option">Itaque earum rerum</option>
+          </select>
+          <input type="email" name="email" id="email" placeholder="Ваш e-mail" aria-placeholder="Ваш e-mail" class="order-form__item input form__item">
+          <input type="text" name="username" id="username" placeholder="Ваше имя" aria-placeholder="Ваше имя" class="order-form__item input form__item">
+          <div class="order-form__item order-form__item_span2 wrapper-slider">
+            <label for="wrapper-sliderInput" class="wrapper-slider__item wrapper-slider__item_label">
+              Sed ut perspiciatis, unde omnis iste natus
+            </label>
+            <output for="wrapper-slider" class="wrapper-slider__item wrapper-slider__item_output" id="wrapper-sliderOutput"></output>
+            <input type="range" min="1" max="100" name="wrapper-slider" id="wrapper-sliderInput" class="wrapper-slider__item wrapper-slider__item_input">
+          </div>
+          <div class="order-form__item wrapper-input-file">
+            <label for="file" class="wrapper-input-file__label">Прикрепить файл</label>
+            <input type="file" class="wrapper-input-file__input" name="file" id="file">
+          </div>
+          <div class="order-form__item_span3 wrapper-input-submit">
+            <input type="submit" name="submit" id="submit" class="wrapper-input-submit__input form__item" value="Отправить">
+          </div>
+        </form>
+      </section>
+    </article>
+  </main>
+  <footer class="part part_footer">
+    <div class="part__content footer">
+      <p class="footer__item copyright">
+        © 2018 «<span class="copyright__name">LoremIpsum.net</span>» Все права защищены.
+      </p>
+      <span class="footer__item footer__item_separator"></span>
+      <div class="footer__item payment-systems">
+        <span class="payment-systems__item payment-systems__item_qiwi">Qiwi wallet</span>
+        <span class="payment-systems__item payment-systems__item_yandex-money">Yandex Money</span>
+        <span class="payment-systems__item payment-systems__item_web-money">Web Money</span>
+      </div>
+      <span class="footer__item footer__item_separator"></span>
+      <div class="footer__item contacts">
+        <a href="#" class="contacts__item contacts__item_email">info@ipsum228.com</a>
+        <a href="#" class="contacts__item contacts__item_vk">Мы вконтакте</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

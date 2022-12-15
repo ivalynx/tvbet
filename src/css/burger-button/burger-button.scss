@@ -1,0 +1,51 @@
+
+.burger-button {
+  @include for-size(phone) {
+    padding: 0; 
+    display: block;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+@include for-size(phone){
+  .burger-button__item {
+    display: inherit;
+    width: 36px;
+    height: 6px;
+    margin-bottom: 9px;
+    background-color: $white;
+    overflow: hidden;    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .burger-button_close {
+    position: absolute;
+    z-index: 5;
+    top: 33px;
+    right: 15px;
+  }
+  .burger-button_close__item {
+    color: $black;
+    background-color: $black;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    position: relative;
+    &:nth-child(1) {
+      transform: rotate(45deg);
+      top: 6px;
+    }
+    &:nth-child(2) {
+      display: none;
+    }
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+      top: -8px;
+    }
+  }
+}
